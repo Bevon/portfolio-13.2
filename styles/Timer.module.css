@@ -1,0 +1,12 @@
+.timer {
+    text-align: center;
+}
+.date {
+    color: #04053c;
+}
+.day {
+    padding: 4px;
+    border: 1px solid #00dcff;
+    border-radius: 4px;
+
+}

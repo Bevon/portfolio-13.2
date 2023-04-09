@@ -1,0 +1,53 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #04053c; 
+}
+.contact > div {
+    font-family: 'Inter';
+    border: 1px soild black;
+    padding: 5px;
+}
+.form>input {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Inter';
+}
+.form>input:focus {
+    border: 1px solid #5f2bd6;
+    
+}
+.form>textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form .textarea:focus {
+    border: 1px solid #04053c;
+    
+}
+.form>button {
+    width: 50%;
+    padding: 10px;
+    background-color:#04053c;
+    border-radius: 30px;
+    text-decoration: none;
+    border: none;
+    font-family: 'Inter';
+    color: #ccc;
+    
+}
+.form > button:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+    transition: ease 200ms;
+    color: white;
+}

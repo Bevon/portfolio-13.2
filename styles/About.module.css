@@ -1,0 +1,19 @@
+.about{
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    color: black;
+}
+.image{
+    border-radius: 30px;
+    
+}
+.boximg{
+    border: 1px solid teal;
+    padding: 16px;
+    margin: 10px;
+    
+
+}
