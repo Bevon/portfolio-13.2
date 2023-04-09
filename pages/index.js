@@ -143,8 +143,6 @@ export default function Home({data}) {
               <Image src={Logo} alt='Site Logo'/>
               <p>This is a child container.This is a child container.
               This is a child container.This is a child container.This is a child container</p>
-              <hr/>
-              <p><copyright>{format(new Date(Date.now()), 'MMMM yyyy')}. All rights reserved.</copyright></p>
             </div>
           </div>
         </div>
@@ -183,6 +181,9 @@ export default function Home({data}) {
             </div>
           </div>
         </div>
+      </div>
+      <div className={styles.copyright}>
+        <p><copyright>{format(new Date(Date.now()), 'MMMM yyyy')}. All rights reserved.</copyright></p>
       </div>
     </>
   )

@@ -295,6 +295,14 @@
   color: white;
   transform: matrix(3);
 }
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+  color: white;
+}
 
 
 
