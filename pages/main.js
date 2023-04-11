@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
+import {Canvas, useFrame } from '@react-three/fiber'
 
 function Box(props) {
   // This reference gives us direct access to the THREE.Mesh object
@@ -24,4 +24,13 @@ function Box(props) {
   )
 }
 
-export default Box
+export default function MyCanvas(){
+  return (
+    <Canvas>
+    <ambientLight/>
+    <pointLight position={[10, 10, 10]} />
+    <Box position={[-1.2, 0, 0]} />
+    <Box position={[1.2, 0, 0]} />
+  </Canvas>
+  )
+}
