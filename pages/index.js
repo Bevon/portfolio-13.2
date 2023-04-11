@@ -9,6 +9,9 @@ import {Twitter, Linkedin, GitHub, Twitch, Instagram} from 'react-feather'
 import DateTime from './components/dateTime'
 import {format} from 'date-fns'
 import Contact from './components/contact'
+import { Canvas} from '@react-three/fiber'
+import { AmbientLight } from 'three'
+import Box from './main'
 
 export default function Home({data}) {        
   const Competencies = ['Javascript', "Python", "React", "NextJS", "Linux","MySQL","MongoDB", "Agile Methodologies", " Node.js", "Server Administration","Express", "Amazon Web Services (AWS)","Automated Testing (Cypress)"]                                                                        
@@ -72,6 +75,14 @@ export default function Home({data}) {
               })
             }
           </div>
+          <div>
+            <Canvas>
+                <ambientLight/>
+                <pointLight position={[10, 10, 10]} />
+                <Box position={[-1.2, 0, 0]} />
+                <Box position={[1.2, 0, 0]} />
+            </Canvas>
+      </div>
         </div>
         <div className={styles.main}>
           <h2>My Creative Portfolio</h2>
