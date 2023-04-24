@@ -45,7 +45,6 @@ export default function Contact() {
         style={{ display: isSent ? "" : "none" }}
       >
         <p>Message has been sent</p>
-        
       </div>
     );
   }
@@ -106,4 +105,3 @@ export default function Contact() {
     </div>
   );
 }
-
