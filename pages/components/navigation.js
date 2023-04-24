@@ -5,7 +5,7 @@ import DateTime from "./dateTime";
 import Link from "next/link";
 import { Twitter, Linkedin, GitHub, Twitch, Instagram } from "react-feather";
 
-export default function Navigation({ data }) {
+export default function Navigation({data}) {
   return (
     <div className={styles.headerWrapper}>
       <div className={styles.siteDate}>

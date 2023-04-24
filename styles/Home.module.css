@@ -41,7 +41,7 @@
 }
 .bioCard > p {
   font-size: 14px;
-  font-weight: lighter;
+  font-weight:300;
   color: gray;
 }
 .bioCard > p:hover {
