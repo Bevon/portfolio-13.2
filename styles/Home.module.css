@@ -1,11 +1,11 @@
 /* Header Wrapper */
 
 .headerWrapper {
-  background-image: url('../public/code.jpg');
+  background-image: url("../public/code.jpg");
   background-size: cover;
   /* background-repeat: no-repeat; */
-  background-position-x:left;
-  background-position-y:top;
+  background-position-x: left;
+  background-position-y: top;
 }
 .siteDate {
   display: flex;
@@ -18,23 +18,22 @@
 .header {
   display: flex;
   height: 400px;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  font-family: 'Inter';
 }
 .bioCard {
   display: flex;
   flex-direction: column;
   height: 300px;
-  width : 400px;
+  width: 400px;
   border-radius: 16px;
   /* border: 1px solid rgb(255, 255, 255); */
-  background-color:  white;
+  background-color: white;
   align-items: center;
   justify-content: center;
   padding: 20px;
   margin: 10px;
-  border:1px solid #04053c;
+  border: 1px solid #04053c;
 }
 .bioImage {
   border-radius: 60px;
@@ -63,7 +62,7 @@
 .socialIcons {
   display: flex;
   flex-direction: row;
-  color:#04053c ;
+  color: #04053c;
   margin-bottom: 5px;
 }
 .socialIcons > div {
@@ -80,8 +79,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color:white;
-  font-size:medium;
+  color: white;
+  font-size: medium;
 }
 /* Style the navigation bar links */
 .navbar a {
@@ -99,13 +98,12 @@
 .brand {
   flex: 20%;
   padding: 10px;
-
 }
 .navigation {
   flex: 40%;
 }
 /* Column container Wrapper */
-.row {  
+.row {
   display: flex;
   flex-wrap: wrap;
 }
@@ -113,8 +111,8 @@
 /* Sidebar/left column */
 .side {
   flex-wrap: wrap;
-  flex:30%;
-  background-color:#eae2fb;
+  flex: 30%;
+  background-color: #eae2fb;
   padding: 10px;
   text-align: center;
   justify-content: center;
@@ -122,26 +120,24 @@
 }
 
 .side > h5 {
-  margin:20px ;
+  margin: 20px;
   font-size: 25px;
   color: #04053c;
-  
 }
 .side > hr {
   width: 35%;
-  color:gray;
+  color: gray;
   margin-left: 20px;
   padding: 1px;
   background-color: gray;
   margin-bottom: 5px;
-
 }
 .side .skills {
   display: flex;
   flex-wrap: wrap;
 }
 .side .column {
-  background-color:#04053c;
+  background-color: #04053c;
   padding: 12px;
   margin: 10px;
   border-radius: 30px;
@@ -153,27 +149,22 @@
   color: #00dcff;
 }
 
-
 /* Main column */
 .main {
-  flex:70%;
+  flex: 70%;
   text-align: center;
   background-color: #eae2fb;
   flex-wrap: wrap;
-  
 }
 .main > h2 {
-
-  margin:20px ;
+  margin: 20px;
   font-size: 25px;
   color: #04053c;
-
 }
 .main > h5 {
   font-weight: medium;
   color: gray;
   margin-bottom: 5px;
-
 }
 .projects {
   display: flex;
@@ -187,7 +178,6 @@
   box-sizing: border-box;
 }
 .projects .projectCard {
-  
   background-color: #04053c;
   margin: 10px;
   width: 300px;
@@ -220,7 +210,7 @@
   border: 1px solid #b99eff;
 }
 .projectCard .techCardContainer {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
@@ -237,7 +227,7 @@
 }
 .techCardContainer .techCard:hover {
   background-color: #00dcff;
-  transition:ease;
+  transition: ease;
   transition-duration: 200ms;
 }
 /* Footer */
@@ -251,14 +241,14 @@
 }
 .footer > div {
   display: flex;
-  flex:30%;
+  flex: 30%;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 10px;
   justify-content: flex-start;
 }
 .aboutSite {
-  padding:5px;
+  padding: 5px;
 }
 .aboutSite > p {
   padding: 5px;
@@ -280,7 +270,6 @@
   margin: 6px;
   color: inherit;
   font-weight: 300;
- 
 }
 .usefulLink .icons {
   font-size: large;
@@ -302,19 +291,18 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 5px;
-  color:  #0463b8;
+  color: #0463b8;
 }
 
-
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) and (orientation : portrait) {
-  .row, .navbar, .header, .footer {   
+@media screen and (max-width: 700px) and (orientation: portrait) {
+  .row,
+  .navbar,
+  .header,
+  .footer {
     flex-direction: column;
   }
   .bioCard {
     margin: auto;
-
   }
 }
-
-

@@ -1,53 +1,92 @@
 .contact {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: #04053c; 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #04053c;
 }
 .contact > div {
-    font-family: 'Inter';
-    border: 1px soild black;
-    padding: 5px;
+  border: 1px soild black;
+  padding: 5px;
 }
-.form>input {
-    width: 100%;
-    padding: 10px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: 'Inter';
+.form > input {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
-.form>input:focus {
-    border: 1px solid #5f2bd6;
-    
+.form > input:focus {
+  border: 1px solid #5f2bd6;
 }
-.form>textarea {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.form > textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 .form .textarea:focus {
-    border: 1px solid #04053c;
-    
+  border: 1px solid #04053c;
 }
-.form>button {
-    width: 50%;
-    padding: 10px;
-    background-color:#04053c;
-    border-radius: 30px;
-    text-decoration: none;
-    border: none;
-    font-family: 'Inter';
-    color: #ccc;
-    
+.form > button {
+  width: 50%;
+  padding: 10px;
+  background-color: #04053c;
+  border-radius: 30px;
+  text-decoration: none;
+  border: none;
+  color: #ccc;
 }
 .form > button:hover {
-    transform: scale(1.25);
-    cursor: pointer;
-    transition: ease 200ms;
-    color: white;
+  transform: scale(1.25);
+  cursor: pointer;
+  transition: ease 200ms;
+  color: white;
+}
+.sent {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.sent > p {
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: green;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modalContent {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
