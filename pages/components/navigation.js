@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "../../public/vercel.svg";
+import Logo from "../../public/nep1.png";
 import styles from "@/styles/Home.module.css";
 import DateTime from "./dateTime";
 import Link from "next/link";
@@ -13,7 +13,7 @@ export default function Navigation({data}) {
       </div>
       <div className={styles.navbar}>
         <div className={styles.brand}>
-          <Image src={Logo} alt="Site Logo" />
+          <Image src={Logo} alt="Site Logo" width={256}/>
         </div>
         <div className={styles.navigation}>
           <Link href="/">Home</Link>

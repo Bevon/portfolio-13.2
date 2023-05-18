@@ -28,12 +28,12 @@ export default function Home({ data }) {
       <Footer />
       {/* Copyright */}
       <Copyright/>
-      <Script src="./utils/modal.js"></Script>
+      {/* <Script src="./utils/modal.js"></Script> */}
     </>
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch("https://api.github.com/users/Bevon");
   if (!res.ok) {
     throw new Error("Resource not found");
