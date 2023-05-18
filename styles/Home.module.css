@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-color: #0463b8;
+  background-color: #04053c;
 }
 
 .header {
@@ -237,7 +237,7 @@
   flex-wrap: wrap;
   padding: 10px;
   color: inherit;
-  background-color: #0463b8;
+  background-color: #04053c;
 }
 .footer > div {
   display: flex;
