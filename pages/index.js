@@ -38,8 +38,8 @@ export async function getStaticProps() {
     throw new Error("Resource not found");
   }
   const data = await res.json();
-  console.log(data)
+  
   return {
-    props: { data },
+    props: data ,
   };
 }
