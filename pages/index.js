@@ -18,7 +18,7 @@ export default function Home({ props }) {
        
       </Head>
       {/* Navigation Bar */}
-      <Navigation data={data} />
+      <Navigation props={props} />
       {/* The flexible grid (content) */}
       <div className={styles.row}>
         <Skills />
