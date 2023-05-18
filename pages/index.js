@@ -32,7 +32,7 @@ export default function Home({ data }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch("https://api.github.com/users/Bevon");
   if (!res.ok) {
     throw new Error("Resource not found");
