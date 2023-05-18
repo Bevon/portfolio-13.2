@@ -1,18 +1,17 @@
 /* Header Wrapper */
-
 .headerWrapper {
   background-image: url("../public/code.jpg");
   background-size: cover;
-  /* background-repeat: no-repeat; */
-  /* background-position-x: left;
-  background-position-y: top; */
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: top;
 }
 .siteDate {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  background-color: #0463b8;
+  background-color: #04053c;
+  color: white;
 }
 
 .header {
@@ -33,7 +32,7 @@
   justify-content: center;
   padding: 20px;
   margin: 10px;
-  border: 1px solid #04053c;
+  border: 1px solid #0c9467;
 }
 .bioImage {
   border-radius: 60px;
@@ -42,27 +41,27 @@
 .bioCard > p {
   font-size: 14px;
   font-weight:300;
-  color: gray;
+  color:gray;
 }
 .bioCard > p:hover {
   font-weight: lighter;
   cursor: pointer;
 }
 .bioCard > h5 {
-  color: #04053c;
+  color: #0c9467;
   margin-top: 5px;
   font-weight: 900;
   font-size: large;
 }
 .bioCard > h5:hover {
-  color: #00dcff;
+  color: #04053c;
   margin-top: 5px;
   cursor: pointer;
 }
 .socialIcons {
   display: flex;
   flex-direction: row;
-  color: #04053c;
+  color: #0c9467;
   margin-bottom: 5px;
 }
 .socialIcons > div {
@@ -72,7 +71,7 @@
 }
 .socialIcons > div:hover {
   font-size: large;
-  color: #00dcff;
+  color: #04053c;
 }
 /* Style the top navigation bar */
 .navbar {
@@ -85,15 +84,15 @@
 /* Style the navigation bar links */
 .navbar a {
   color: inherit;
-  padding: 14px 20px;
+  padding:10px;
   text-decoration: none;
   text-align: center;
 }
 /* Change color on hover */
 .navbar a:hover {
   background-color: #eae2fb;
-  color: #00dcff;
-  border-radius: 30px;
+  color: #0c9467;
+  border-radius: 6px;
 }
 .brand {
   flex: 20%;
@@ -122,14 +121,14 @@
 .side > h5 {
   margin: 20px;
   font-size: 25px;
-  color: #04053c;
+  color: #0c9467;
 }
 .side > hr {
-  width: 35%;
-  color: gray;
+  width: 50%;
+  color:gray;
   margin-left: 20px;
   padding: 1px;
-  background-color: gray;
+  background-color: #0c9467;
   margin-bottom: 5px;
 }
 .side .skills {
@@ -146,7 +145,8 @@
   cursor: pointer;
 }
 .side .column:hover {
-  color: #00dcff;
+  color: white;
+  background-color: #0c9467;
 }
 
 /* Main column */
@@ -159,11 +159,11 @@
 .main > h2 {
   margin: 20px;
   font-size: 25px;
-  color: #04053c;
+  color: #0c9467;
 }
 .main > h5 {
-  font-weight: medium;
-  color: gray;
+  font-weight:200;
+  color: #0c9467;
   margin-bottom: 5px;
 }
 .projects {
@@ -171,7 +171,6 @@
   align-content: space-between;
   flex-wrap: wrap;
   justify-content: center;
-  overflow-x: scroll;
 }
 .projectCard .imageCard {
   width: 100%;
@@ -189,7 +188,7 @@
 .projectCard > h5 {
   margin-top: 5px;
   margin-bottom: 5px;
-  color: #00dcff;
+  color: #0c9467;
 }
 .projectCard > p {
   font-weight: lighter;
@@ -199,15 +198,15 @@
 .projectCard > a {
   font-weight: lighter;
   /* color:#e31e9e; */
-  color: #00dcff;
+  color: #0c9467;
   /* background-color: #fbca4c; */
   padding: 6px;
   border-radius: 16px;
   font-size: small;
 }
 .projectCard > a:hover {
-  outline-color: #b99eff;
-  border: 1px solid #b99eff;
+  outline-color: white;
+  border: 1px solid white;
 }
 .projectCard .techCardContainer {
   display: flex;
@@ -223,10 +222,10 @@
   margin: 10px;
   border-radius: 3px;
   padding: 6px;
-  border: 1px solid #b99eff;
+  border: 1px solid white;
 }
 .techCardContainer .techCard:hover {
-  background-color: #00dcff;
+  background-color: #0c9467;
   transition: ease;
   transition-duration: 200ms;
 }
@@ -237,7 +236,7 @@
   flex-wrap: wrap;
   padding: 10px;
   color: inherit;
-  background-color: #0463b8;
+  background-color: #04053c;
 }
 .footer > div {
   display: flex;
@@ -253,11 +252,11 @@
 .aboutSite > p {
   padding: 5px;
   margin-top: 5px;
-  color: #04053c;
+  color: white;
 }
 .aboutSite > h3 {
   text-align: center;
-  color: #04053c;
+  color: #0c9467;
   padding: 10px;
 }
 .usefulLink {
@@ -273,36 +272,49 @@
 }
 .usefulLink .icons {
   font-size: large;
-  background-color: #04053c;
+  background-color: #0c9467;
   border-radius: 60px;
   padding: 10px;
   color: white;
 }
 .usefulLink > :nth-child(2) {
-  color: #04053c;
+  color: white;
 }
 .usefulLink > :nth-child(2):hover {
   color: white;
-  transform: matrix(3);
+  transform:scale(0.5)
 }
 .copyright {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 5px;
-  color: #0463b8;
+  padding: 10px;
+  color: #0c9467;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) and (orientation: portrait) {
-  .row,
-  .navbar,
-  .header,
+  .row {
+    flex-direction: column;
+  }
+  .navbar{
+    flex-direction: column;
+  }
+  .header .bioCard {
+    padding: 10px;
+    margin: 10px;
+    font-size: 12px;
+    background-color: azure;
+
+  }
   .footer {
     flex-direction: column;
   }
-  .bioCard {
-    margin: auto;
+  .headerWrapper {
+    background-size: contain;
+  }
+  .side > hr {
+    width: 35%;
   }
 }

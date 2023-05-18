@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Logo from "../../public/nep1.png";
+import Logo from "../public/nep1.png";
 import styles from "@/styles/Home.module.css";
 import DateTime from "./dateTime";
 import Link from "next/link";
-import { Twitter, Linkedin, GitHub, Twitch, Instagram } from "react-feather";
+import { Twitter, Linkedin, GitHub} from "react-feather";
 
 export default function Navigation({data}) {
   return (
@@ -18,12 +18,12 @@ export default function Navigation({data}) {
         <div className={styles.navigation}>
           <Link href="/">Home</Link>
           <Link href="#about">About</Link>
-          <Link href="/">Portfolio</Link>
-          <Link href="/">Contact</Link>
+          <Link href="#portfolio">Portfolio</Link>
+          <Link href="#contact">Contact</Link>
           <Link href="/">Blog</Link>
         </div>
       </div>
-      <div className={styles.header}>
+      <div className={styles.header} id="about">
         <div className={styles.bioCard}>
           <Image
             className={styles.bioImage}

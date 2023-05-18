@@ -1,11 +1,11 @@
 import styles from "@/styles/Home.module.css";
-import ProjectLogo from "../../public/api.jpg";
-import AnotherLogo from "../../public/holder.jpg";
+import ProjectLogo from "../public/api.jpg";
+import AnotherLogo from "../public/holder.jpg";
 import Image from "next/image";
 
 export default function Projects() {
   return (
-    <div className={styles.main}>
+    <div className={styles.main} id="portfolio">
       <h2>My Creative Portfolio</h2>
       <h5>These are some of the project I have built with my skills</h5>
       <div className={styles.projects}>

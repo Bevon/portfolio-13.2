@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import styles from "../../styles/Timer.module.css";
+import styles from "@/styles/Timer.module.css";
 import { format } from "date-fns";
 
 function DateTime() {
@@ -16,7 +16,7 @@ function DateTime() {
   );
   return (
     <div className={styles.timer}>
-      <p className={styles.date}>
+      <p className={[styles.date, styles.day]}>
         Today is <b className={styles.day}>{day}</b>
       </p>
     </div>

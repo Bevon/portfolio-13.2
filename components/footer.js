@@ -1,5 +1,5 @@
 import styles from "@/styles/Home.module.css";
-import Logo from "../../public/vercel.svg";
+import Logo from "../public/nep1.png";
 import Link from "next/link";
 import { Twitter, Linkedin, GitHub, Twitch, Instagram } from "react-feather";
 import Image from "next/image";
@@ -12,7 +12,7 @@ function Footer() {
         <div>
           <div className={styles.aboutSite}>
             <h3>Rubric</h3>
-            <Image src={Logo} alt="Site Logo" />
+            <Image src={Logo} alt="Site Logo" width={256} loading="lazy"/>
             <p>
               This is a child container.This is a child container. This is a
               child container.This is a child container.This is a child

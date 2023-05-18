@@ -1,11 +1,10 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
-import Projects from "./components/projects";
-import Skills from "./components/skills";
-import Navigation from "./components/navigation";
-import Footer from "./components/footer";
-import Copyright from "./components/copyright";
-import Script from 'next/script'
+import Projects from "../components/projects";
+import Skills from "../components/skills";
+import Navigation from "../components/navigation";
+import Footer from "../components/footer";
+import Copyright from "../components/copyright";
 
 export default function Home({ data }) {
   return (
@@ -28,7 +27,6 @@ export default function Home({ data }) {
       <Footer />
       {/* Copyright */}
       <Copyright/>
-      {/* <Script src="./utils/modal.js"></Script> */}
     </>
   );
 }

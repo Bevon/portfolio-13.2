@@ -1,11 +1,13 @@
 .timer {
-  text-align: center;
+  /* text-align: center; */
+  padding: 10px;
 }
 .date {
-  color: #04053c;
+  color: inherit;
 }
 .day {
   padding: 4px;
-  border: 1px solid #00dcff;
+  border: 1px solid #0c9467;
   border-radius: 4px;
+  color:#0c9467;
 }

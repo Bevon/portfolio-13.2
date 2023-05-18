@@ -50,7 +50,7 @@ export default function Contact() {
   }
 
   return (
-    <div className={styles.contact}>
+    <div className={styles.contact} id="contact">
       {sentNotification()}
       <div>
         <form className={styles.form}>

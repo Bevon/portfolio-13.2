@@ -1,5 +1,5 @@
 import styles from "@/styles/Home.module.css";
-import MyCanvas from "../main";
+import MyCanvas from "./myThree";
 
 export default function Skills() {
   const Competencies = [
