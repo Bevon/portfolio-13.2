@@ -5,7 +5,7 @@ import DateTime from "./dateTime";
 import Link from "next/link";
 import { Twitter, Linkedin, GitHub, Twitch, Instagram } from "react-feather";
 
-export default function Navigation(data) {
+export default function Navigation(props) {
   return (
     <div className={styles.headerWrapper}>
       <div className={styles.siteDate}>
@@ -27,19 +27,19 @@ export default function Navigation(data) {
         <div className={styles.bioCard}>
           <Image
             className={styles.bioImage}
-            src={data.avatar_url}
+            src={props.data.data.avatar_url}
             height={96}
             width={96}
             alt="User Photo"
             priority
           />
-          <h5>{data.name}</h5>
+          <h5>{props.data.data.name}</h5>
           <br />
           <hr />
-          <p>{data.bio}</p>
+          <p>{props.data.data.bio}</p>
           <br />
-          <p>Github Repos: {data.public_repos}</p>
-          <p>Location: {data.location}</p>
+          <p>Github Repos: {props.data.public_repos}</p>
+          <p>Location: {props.data.data.location}</p>
           <hr />
           <div className={styles.socialIcons}>
             <div className={styles.twitter}>
