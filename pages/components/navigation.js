@@ -27,19 +27,18 @@ export default function Navigation(props) {
         <div className={styles.bioCard}>
           <Image
             className={styles.bioImage}
-            src={props.data.data.avatar_url}
+            src={props.avatar_url}
             height={96}
             width={96}
             alt="User Photo"
             priority
           />
-          <h5>{props.data.data.name}</h5>
+          <h5>{props.name}</h5>
           <br />
-          <hr />
-          <p>{props.data.data.bio}</p>
+          <p>{props.bio}</p>
           <br />
-          <p>Github Repos: {props.data.public_repos}</p>
-          <p>Location: {props.data.data.location}</p>
+          <p>Github Repos: {props.public_repos}</p>
+          <p>Location: {props.location}</p>
           <hr />
           <div className={styles.socialIcons}>
             <div className={styles.twitter}>
