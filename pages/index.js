@@ -7,7 +7,7 @@ import Footer from "./components/footer";
 import Copyright from "./components/copyright";
 import Script from 'next/script'
 
-export default function Home({ data }) {
+export default function Home({ props }) {
   return (
     <>
       <Head>
@@ -40,6 +40,6 @@ export async function getStaticProps() {
   const data = await res.json();
   
   return {
-    props: {data} ,
+    props: {...data} ,
   };
 }
