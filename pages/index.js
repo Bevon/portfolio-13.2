@@ -18,7 +18,7 @@ export default function Home({ props }) {
        
       </Head>
       {/* Navigation Bar */}
-      <Navigation data={props} />
+      <Navigation userData={props} />
       {/* The flexible grid (content) */}
       <div className={styles.row}>
         <Skills />
@@ -40,6 +40,6 @@ export async function getStaticProps() {
   const data = await res.json();
   
   return {
-    props: {...data} ,
+    props: {data} ,
   };
 }
