@@ -27,18 +27,18 @@ export default function Navigation({userData}) {
         <div className={styles.bioCard}>
           <Image
             className={styles.bioImage}
-            src={userData.avatar_url}
+            src={userData.userData.avatar_url}
             height={96}
             width={96}
             alt="User Photo"
             priority
           />
-          <h5>{userData.name}</h5>
+          <h5>{userData.userData.name}</h5>
           <br />
-          <p>{userData.bio}</p>
+          <p>{userData.userData.bio}</p>
           <br />
-          <p>Github Repos: {userData.public_repos}</p>
-          <p>Location: {userData.location}</p>
+          <p>Github Repos: {userData.userData.public_repos}</p>
+          <p>Location: {userData.userData.location}</p>
           <hr />
           <div className={styles.socialIcons}>
             <div className={styles.twitter}>
