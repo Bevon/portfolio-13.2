@@ -133,6 +133,7 @@
   padding: 1px;
   background-color: #0c9467;
   margin-bottom: 5px;
+  margin-right: 20px;
 }
 .side .skills {
   display: flex;
@@ -319,6 +320,5 @@
   }
   .side > hr {
     width: 100%;
-    margin-right: 20px;
   }
 }
