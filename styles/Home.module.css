@@ -318,6 +318,6 @@
     background-size: contain;
   }
   .side > hr {
-    width: 35%;
+    width: 100%;
   }
 }
