@@ -1,7 +1,5 @@
 /* Header Wrapper */
 .headerWrapper {
-  display:flex;
-  flex-direction: column;
   background-image: url("../public/code.jpg");
   background-size: auto;
   background-repeat: no-repeat;
@@ -54,15 +52,14 @@
 .bio {
   display: flex;
   margin-bottom: 10px;
-  /*height: 400px;*/
   justify-content: center;
   align-items: center;
 }
 .bioCard {
   display: flex;
   flex-direction: column;
-  height: fit-content;
-  width: fit-content;
+  height: 300px;
+  width: 400px;
   border-radius: 16px;
   background-color: white;
   align-items: center;
@@ -73,7 +70,7 @@
 }
 .bioImage {
   border-radius: 60px;
-  /*margin-top: 10px;*/
+  margin-top: 10px;
 }
 .bioCard > p {
   font-size: 14px;
@@ -92,7 +89,7 @@
 }
 .bioCard > h5:hover {
   color: #04053c;
- 
+  margin-top: 5px;
   cursor: pointer;
 }
 .socialIcons {
@@ -140,7 +137,6 @@
   padding: 1px;
   background-color: #0c9467;
   margin-bottom: 5px;
-  margin-right: 20px;
 }
 .side .skills {
   display: flex;
@@ -352,7 +348,7 @@
     flex-direction: column;
   }
   .side > hr {
-    width: 100%;
+    width: 35%;
   }
   .search {
     margin-top: 10px;
