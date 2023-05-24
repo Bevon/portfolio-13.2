@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Twitter, Linkedin, GitHub, Twitch, Instagram } from "react-feather";
 import Image from "next/image";
 import Contact from "./contact";
+import Copyright from "./copyright";
 
 function Footer() {
   return (
@@ -12,12 +13,14 @@ function Footer() {
         <div>
           <div className={styles.aboutSite}>
             <h3>Rubric</h3>
-            <Image src={Logo} alt="Site Logo" width={256} loading="lazy"/>
+            <Image src={Logo} alt="Site Logo" width={256} loading="lazy" />
             <p>
               This is a child container.This is a child container. This is a
               child container.This is a child container.This is a child
+              container.This is a child container.This is a child
               container
             </p>
+            <Copyright />
           </div>
         </div>
       </div>
@@ -32,7 +35,7 @@ function Footer() {
                 </Link>
               </div>
               <div>
-                <a>Github Repositories</a>
+                <Link href="/">Github Repositories</Link>
               </div>
             </div>
             <div className={styles.usefulLink}>

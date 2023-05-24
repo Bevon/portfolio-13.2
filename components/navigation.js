@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Twitter, Linkedin, GitHub} from "react-feather";
 
 export default function Navigation({data}) {
+  
   return (
     <div className={styles.headerWrapper}>
       <div className={styles.siteDate}>
@@ -13,17 +14,18 @@ export default function Navigation({data}) {
       </div>
       <div className={styles.navbar}>
         <div className={styles.brand}>
-          <Image src={Logo} alt="Site Logo" width={256}/>
+          <div><Image src={Logo} alt="Site Logo" width={256}/></div>
         </div>
         <div className={styles.navigation}>
           <Link href="/">Home</Link>
-          <Link href="#about">About</Link>
+          <Link href="#bio">About</Link>
           <Link href="#portfolio">Portfolio</Link>
           <Link href="#contact">Contact</Link>
           <Link href="/">Blog</Link>
         </div>
+        <div className={styles.search}><button className={styles.button}><Link href="#contact">Contact Me</Link></button></div>
       </div>
-      <div className={styles.header} id="about">
+      <div className={styles.bio} id="bio">
         <div className={styles.bioCard}>
           <Image
             className={styles.bioImage}
@@ -35,12 +37,10 @@ export default function Navigation({data}) {
           />
           <h5>{data.name}</h5>
           <br />
-          <hr />
           <p>{data.bio}</p>
           <br />
           <p>Github Repos: {data.public_repos}</p>
           <p>Location: {data.location}</p>
-          <hr />
           <div className={styles.socialIcons}>
             <div className={styles.twitter}>
               <Link href="https://twitter.com/_son_of_morning" target="_blank">

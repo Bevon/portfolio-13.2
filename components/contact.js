@@ -44,7 +44,7 @@ export default function Contact() {
         id="modal"
         style={{ display: isSent ? "" : "none" }}
       >
-        <p>Message has been sent</p>
+        <p>Your message has been sent!</p>
       </div>
     );
   }
@@ -64,6 +64,7 @@ export default function Contact() {
             id="fname"
             name="fname"
             placeholder="Your Name..."
+            autoComplete="name"
           />
           <br />
           <label htmlFor="email">Enter your email:</label>
@@ -76,6 +77,7 @@ export default function Contact() {
             id="email"
             name="email"
             placeholder="Your Email..."
+            autoComplete="email"
           />
           <br />
           <label htmlFor="message">Write a message: </label>
@@ -89,6 +91,7 @@ export default function Contact() {
             rows={10}
             cols={10}
             placeholder="Enter Your Message..."
+            id="message"
           ></textarea>
           <br />
           <br />
